@@ -24,7 +24,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build the Docker image
-      run: docker build -t fahimhassandoc/to-do:latest .
+      run: docker build -t fahimhassandoc/to-do:latest web-banking-demo-application/app
       
     - name: Push the Docker image to Docker Hub
       run: docker push fahimhassandoc/to-do:latest
