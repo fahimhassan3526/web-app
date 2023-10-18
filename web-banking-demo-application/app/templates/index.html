@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messi</title>
+</head>
+<body>
+    <h1>Messi</h1>
+    
+    <!-- Deposit Form -->
+    <form method="POST" action="/deposit">
+        <label for="account_id">Account ID:</label>
+        <input type="text" name="account_id">
+        <label for="amount">Amount:</label>
+        <input type="text" name="amount">
+        <input type="submit" value="Deposit">
+    </form>
+    
+    <!-- Withdraw Form -->
+    <form method="POST" action="/withdraw">
+        <label for="account_id">Account ID:</label>
+        <input type="text" name="account_id">
+        <label for="amount">Amount:</label>
+        <input type="text" name="amount">
+        <input type="submit" value="Withdraw">
+    </form>
+    
+    <!-- Check Balance Form -->
+    <form method="GET" action="/check_balance">
+        <label for="account_id">Account ID:</label>
+        <input type="text" name="account_id">
+        <input type="submit" value="Check Balance">
+    </form>
+
+    <!-- Register Form -->
+    <form method="POST" action="/register">
+        <label for="initial_balance">Initial Balance:</label>
+        <input type="text" name="initial_balance">
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
